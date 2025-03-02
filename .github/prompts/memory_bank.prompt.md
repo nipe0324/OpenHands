@@ -8,12 +8,12 @@ The Memory Bank consists of required core files and optional context files, all 
 
 ```mermaid
 flowchart TD
-    PB[projectbrief.md] --> PC[productContext.md]
-    PB --> SP[systemArchitecture.md]
-    PB --> SP[systemPatterns.md]
-    PB --> TC[techContext.md]
+    PB[projectbrief.md] --> PC[product_context.md]
+    PB --> SP[system_architecture.md]
+    PB --> SP[system_patterns.md]
+    PB --> TC[tech_context.md]
 
-    PC --> AC[activeContext.md]
+    PC --> AC[active_context.md]
     SA --> AC
     SP --> AC
     TC --> AC
@@ -28,21 +28,21 @@ flowchart TD
    - Defines core requirements and goals
    - Source of truth for project scope
 
-2. `productContext.md`
+2. `product_context.md`
    - Why this project exists
    - Problems it solves
    - How it should work
    - User experience goals
 
-3. `activeContext.md`
+3. `active_context.md`
    - Current work focus
    - Recent changes
    - Next steps
    - Active decisions and considerations
 
-4. `systemArchitecture.md`
+4. `system_architecture.md`
 
-# systemArchitecture.md
+# system_architecture.md
    - Overall Architecture Overview
      Outline the high-level structure of the system, explaining how core components interact to deliver the required functionality.
    - Component Breakdown
@@ -58,13 +58,13 @@ flowchart TD
    - Integration Points
      List external services and third-party systems that the architecture integrates with, including the protocols and interfaces used.
 
-1. `systemPatterns.md`
+1. `system_patterns.md`
    - System architecture
    - Key technical decisions
    - Design patterns in use
    - Component relationships
 
-2. `techContext.md`
+2. `tech_context.md`
    - Technologies used
    - Development setup
    - Technical constraints
@@ -77,7 +77,7 @@ flowchart TD
    - Known issues
 
 ### Additional Context
-Create additional files/folders within memory-bank/ when they help organize:
+Create additional files/folders within memory_bank/ when they help organize:
 - Complex feature documentation
 - Integration specifications
 - API documentation
@@ -134,7 +134,7 @@ flowchart TD
     Start --> Process
 ```
 
-Note: When triggered by **update memory bank**, I MUST review every memory bank file, even if some don't require updates. Focus particularly on activeContext.md and progress.md as they track current state.
+Note: When triggered by **update memory bank**, I MUST review every memory bank file, even if some don't require updates. Focus particularly on active_context.md and progress.md as they track current state.
 
 ## Project Intelligence (.clinerules)
 
